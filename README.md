@@ -4,7 +4,6 @@
 
 ConductDoc automatically generates comprehensive, user-friendly documentation for Python GitHub repositories using GPT-4. Simply provide a repository URL and get beautiful, navigable documentation in minutes.
 
-![ConductDoc Demo](https://via.placeholder.com/800x400/667eea/white?text=ConductDoc+Demo)
 
 ## 🌟 Features
 
