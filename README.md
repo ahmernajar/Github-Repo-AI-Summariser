@@ -70,9 +70,7 @@ ConductDoc automatically generates comprehensive, user-friendly documentation fo
 
 ### Example URLs to Try
 
-- `https://github.com/ManimCommunity/manim` - Mathematical animation library
-- `https://github.com/psf/requests` - HTTP library for Python
-- `https://github.com/pallets/flask` - Lightweight web framework
+- `https://github.com/ahmernajar/digit-recogniser-cnn`
 
 ## 📁 Project Structure
 
