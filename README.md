@@ -253,19 +253,4 @@ See [NOTES.md](NOTES.md) for detailed information about limitations and solution
 - Enterprise features and team management
 - Analytics dashboard and usage metrics
 
-## 📞 Support
-
-- **Issues**: Report bugs and request features on GitHub Issues
-- **Discussions**: Join community discussions on GitHub Discussions
-- **Documentation**: Comprehensive docs in [NOTES.md](NOTES.md)
-
-## 🙏 Acknowledgments
-
-- **OpenAI**: For providing the GPT-4 API
-- **Manim Community**: For the excellent sample repository
-- **FastAPI**: For the modern Python web framework
-- **React**: For the frontend framework
-
 ---
-
-**Made with ❤️ for the Python community** 
