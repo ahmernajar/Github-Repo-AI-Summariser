@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manim - Documentation</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px 0; text-align: center; margin-bottom: 30px; }
+        .header h1 { margin: 0; font-size: 2.5em; }
+        .header p { margin: 10px 0 0; opacity: 0.9; }
+        .content { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 30px; }
+        .module { border-left: 4px solid #667eea; padding-left: 20px; margin-bottom: 30px; }
+        .symbol { background: #f8f9fa; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .symbol-header { font-weight: bold; color: #333; margin-bottom: 10px; }
+        .toc { background: #e9ecef; padding: 20px; border-radius: 5px; margin-bottom: 30px; }
+        .toc ul { list-style-type: none; padding-left: 0; }
+        .toc li { margin: 5px 0; }
+        .toc a { text-decoration: none; color: #667eea; }
+        .toc a:hover { text-decoration: underline; }
+        pre { background: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; }
+        code { background: #f8f9fa; padding: 2px 4px; border-radius: 3px; font-family: 'Monaco', 'Menlo', monospace; }
+        .mermaid { text-align: center; margin: 20px 0; }
+        .metadata { color: #666; font-size: 0.9em; margin-top: 20px; }
+        .highlight { background: #fff3cd; padding: 10px; border-left: 4px solid #ffc107; margin: 10px 0; }
+        .code-example { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 5px; padding: 15px; margin: 15px 0; }
+        .code-example h5 { margin-top: 0; color: #495057; }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>manim</h1>
+        <p>Generated Documentation</p>
+        <p class="metadata">Generated on 2024-01-15 | 23 modules | 147 files</p>
+    </div>
+    
+    <div class="container">
+        <div class="content">
+            <div class="toc">
+                <h2>Table of Contents</h2>
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#architecture">Architecture</a></li>
+                    <li><a href="#modules">Modules</a>
+                        <ul>
+                            <li><a href="#manim.scene.scene">manim.scene.scene</a></li>
+                            <li><a href="#manim.mobject.mobject">manim.mobject.mobject</a></li>
+                            <li><a href="#manim.animation.animation">manim.animation.animation</a></li>
+                            <li><a href="#manim.camera.camera">manim.camera.camera</a></li>
+                            <li><a href="#manim.config">manim.config</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="overview">
+                <h2>Overview</h2>
+                <h1>Manim - Mathematical Animation Engine</h1>
+                <p>Manim is a powerful Python library for creating mathematical animations and visualizations. Originally created by Grant Sanderson (3Blue1Brown), Manim has evolved into a comprehensive tool for educational content creation, mathematical demonstrations, and data visualization.</p>
+                
+                <h2>🎯 What is Manim?</h2>
+                <p>Manim (Mathematical Animation Engine) is an animation library that allows you to create precise, programmatic animations. It's particularly well-suited for:</p>
+                <ul>
+                    <li><strong>Educational Content</strong>: Create engaging mathematical explanations and tutorials</li>
+                    <li><strong>Data Visualization</strong>: Animate complex data transformations and statistical concepts</li>
+                    <li><strong>Scientific Presentations</strong>: Illustrate abstract concepts with clear, animated visuals</li>
+                    <li><strong>Interactive Learning</strong>: Build dynamic educational materials</li>
+                </ul>
+                
+                <h2>🚀 Key Features</h2>
+                <ul>
+                    <li><strong>Programmatic Animation</strong>: Create animations using Python code</li>
+                    <li><strong>Mathematical Objects</strong>: Built-in support for geometric shapes, graphs, and mathematical symbols</li>
+                    <li><strong>High-Quality Output</strong>: Render animations in various formats (MP4, GIF, PNG)</li>
+                    <li><strong>Extensible Architecture</strong>: Easy to extend with custom objects and animations</li>
+                    <li><strong>Community-Driven</strong>: Active community with regular updates and contributions</li>
+                </ul>
+                
+                <h2>📦 Installation</h2>
+                <div class="code-example">
+                    <h5>Install via pip:</h5>
+                    <pre><code>pip install manim</code></pre>
+                </div>
+                
+                <div class="code-example">
+                    <h5>Install with additional dependencies:</h5>
+                    <pre><code>pip install manim[jupyterlab]</code></pre>
+                </div>
+                
+                <h2>🎬 Quick Start</h2>
+                <div class="code-example">
+                    <h5>Create your first animation:</h5>
+                    <pre><code>from manim import *
+
+class HelloWorld(Scene):
+    def construct(self):
+        text = Text("Hello, Manim!")
+        self.play(Write(text))
+        self.wait(2)</code></pre>
+                </div>
+                
+                <div class="code-example">
+                    <h5>Render the animation:</h5>
+                    <pre><code>manim -pql hello_world.py HelloWorld</code></pre>
+                </div>
+                
+                <div class="highlight">
+                    <p><strong>Note:</strong> Manim requires additional system dependencies (like LaTeX for text rendering). See the official documentation for complete installation instructions.</p>
+                </div>
+            </div>
+            
+            <div id="architecture">
+                <h2>Architecture</h2>
+                <div class="mermaid">
+                    graph TD
+                        A[Scene] --> B[Mobject]
+                        A --> C[Animation]
+                        A --> D[Camera]
+                        B --> E[VMobject]
+                        B --> F[PMobject]
+                        C --> G[Transform]
+                        C --> H[Creation]
+                        C --> I[Indication]
+                        D --> J[MovingCamera]
+                        D --> K[ThreeDCamera]
+                        E --> L[Text]
+                        E --> M[Circle]
+                        E --> N[Line]
+                        F --> O[Dot]
+                        F --> P[Point]
+                        Q[Config] --> A
+                        Q --> R[Renderer]
+                        R --> S[CairoRenderer]
+                        R --> T[OpenGLRenderer]
+                        U[Utils] --> A
+                        U --> B
+                        U --> C
+                </div>
+            </div>
+            
+            <div id="modules">
+                <h2>Modules</h2>
+                
+                <div class="module" id="manim.scene.scene">
+                    <h3>manim.scene.scene</h3>
+                    <p><strong>File:</strong> manim/scene/scene.py</p>
+                    <h4>Scene Management and Animation Control</h4>
+                    <p>The scene module provides the core <code>Scene</code> class that serves as the foundation for all Manim animations. It manages the rendering process, coordinates mobject animations, and handles the overall animation lifecycle.</p>
+                    
+                    <h4>Key Components:</h4>
+                    <ul>
+                        <li><strong>Scene Class</strong>: The main container for all animation elements</li>
+                        <li><strong>Animation Queue</strong>: Manages the sequence of animations to be rendered</li>
+                        <li><strong>Mobject Management</strong>: Handles adding, removing, and updating mobjects</li>
+                        <li><strong>Rendering Pipeline</strong>: Coordinates with the renderer to produce final output</li>
+                    </ul>
+                    
+                    <h4>Symbols</h4>
+                    
+                    <div class="symbol">
+                        <div class="symbol-header">Class: Scene</div>
+                        <h4>Scene</h4>
+                        <p>The Scene class is the fundamental building block of Manim animations. It provides the canvas and coordination system for all visual elements and animations.</p>
+                        
+                        <h5>Purpose and Functionality:</h5>
+                        <ul>
+                            <li>Manages the collection of mobjects (mathematical objects) in the scene</li>
+                            <li>Coordinates animation timing and sequencing</li>
+                            <li>Handles rendering and output generation</li>
+                            <li>Provides methods for adding, removing, and animating objects</li>
+                        </ul>
+                        
+                        <h5>Key Methods:</h5>
+                        <ul>
+                            <li><code>construct()</code>: Override this method to define your animation</li>
+                            <li><code>play()</code>: Execute one or more animations</li>
+                            <li><code>add()</code>: Add mobjects to the scene</li>
+                            <li><code>remove()</code>: Remove mobjects from the scene</li>
+                            <li><code>wait()</code>: Pause the animation for a specified duration</li>
+                        </ul>
+                        
+                        <div class="code-example">
+                            <h5>Basic Usage Example:</h5>
+                            <pre><code>class MyScene(Scene):
+    def construct(self):
+        # Create a circle
+        circle = Circle()
+        
+        # Add it to the scene
+        self.add(circle)
+        
+        # Animate it
+        self.play(circle.animate.shift(UP))
+        self.wait(1)</code></pre>
+                        </div>
+                        
+                        <div class="code-example">
+                            <h5>Advanced Usage:</h5>
+                            <pre><code>class AdvancedScene(Scene):
+    def construct(self):
+        # Create multiple objects
+        square = Square()
+        circle = Circle()
+        
+        # Group them
+        group = VGroup(square, circle)
+        
+        # Complex animation sequence
+        self.play(
+            Create(square),
+            Create(circle),
+            run_time=2
+        )
+        self.play(group.animate.arrange(RIGHT))
+        self.wait()</code></pre>
+                        </div>
+                        
+                        <div class="highlight">
+                            <p><strong>Important:</strong> Always override the <code>construct()</code> method to define your animation. This is where you'll place all your animation logic.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="module" id="manim.mobject.mobject">
+                    <h3>manim.mobject.mobject</h3>
+                    <p><strong>File:</strong> manim/mobject/mobject.py</p>
+                    <h4>Mathematical Objects and Visual Elements</h4>
+                    <p>The mobject module defines the base classes for all visual elements in Manim. Mobjects (mathematical objects) are the building blocks of animations, representing everything from simple geometric shapes to complex mathematical expressions.</p>
+                    
+                    <h4>Symbols</h4>
+                    
+                    <div class="symbol">
+                        <div class="symbol-header">Class: Mobject</div>
+                        <h4>Mobject (Mathematical Object)</h4>
+                        <p>The base class for all visual elements in Manim. Mobjects can be geometric shapes, text, images, or any other visual element that can be animated.</p>
+                        
+                        <h5>Core Features:</h5>
+                        <ul>
+                            <li><strong>Positioning</strong>: Move, rotate, and scale objects in 3D space</li>
+                            <li><strong>Styling</strong>: Set colors, opacity, and other visual properties</li>
+                            <li><strong>Animation</strong>: All mobjects can be animated using various transformation methods</li>
+                            <li><strong>Hierarchy</strong>: Mobjects can contain other mobjects for complex structures</li>
+                        </ul>
+                        
+                        <div class="code-example">
+                            <h5>Basic Mobject Operations:</h5>
+                            <pre><code># Create and style a mobject
+circle = Circle()
+circle.set_color(BLUE)
+circle.set_opacity(0.7)
+
+# Position and transform
+circle.shift(UP * 2)
+circle.scale(1.5)
+circle.rotate(PI/4)</code></pre>
+                        </div>
+                        
+                        <div class="code-example">
+                            <h5>Animation Example:</h5>
+                            <pre><code># Animate mobject properties
+self.play(circle.animate.shift(RIGHT))
+self.play(circle.animate.set_color(RED))
+self.play(circle.animate.scale(2))</code></pre>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="module" id="manim.animation.animation">
+                    <h3>manim.animation.animation</h3>
+                    <p><strong>File:</strong> manim/animation/animation.py</p>
+                    <h4>Animation System and Transformations</h4>
+                    <p>The animation module provides the framework for creating smooth transitions and transformations of mobjects over time. It includes various types of animations from simple movements to complex morphing effects.</p>
+                    
+                    <h4>Symbols</h4>
+                    
+                    <div class="symbol">
+                        <div class="symbol-header">Class: Animation</div>
+                        <h4>Animation</h4>
+                        <p>The base class for all animations in Manim. Animations define how mobjects change over time, including their position, appearance, and other properties.</p>
+                        
+                        <h5>Animation Types:</h5>
+                        <ul>
+                            <li><strong>Transform</strong>: Morph one mobject into another</li>
+                            <li><strong>Create</strong>: Gradually draw or create mobjects</li>
+                            <li><strong>Uncreate</strong>: Remove mobjects with animation</li>
+                            <li><strong>Indicate</strong>: Highlight or emphasize mobjects</li>
+                        </ul>
+                        
+                        <div class="code-example">
+                            <h5>Common Animation Patterns:</h5>
+                            <pre><code># Creation animations
+self.play(Create(circle))
+self.play(Write(text))
+self.play(DrawBorderThenFill(square))
+
+# Transform animations
+self.play(Transform(circle, square))
+self.play(ReplacementTransform(old_text, new_text))
+
+# Indication animations
+self.play(Indicate(important_object))
+self.play(Flash(point_of_interest))</code></pre>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="module" id="manim.camera.camera">
+                    <h3>manim.camera.camera</h3>
+                    <p><strong>File:</strong> manim/camera/camera.py</p>
+                    <h4>Camera System and Viewport Management</h4>
+                    <p>The camera module handles the viewing perspective and rendering viewport for scenes. It controls how the 3D scene is projected onto the 2D screen and manages camera movements and transformations.</p>
+                    
+                    <h4>Symbols</h4>
+                    
+                    <div class="symbol">
+                        <div class="symbol-header">Class: Camera</div>
+                        <h4>Camera</h4>
+                        <p>The Camera class manages the viewport and rendering perspective for Manim scenes. It determines what portion of the scene is visible and how it's projected onto the output frame.</p>
+                        
+                        <h5>Camera Features:</h5>
+                        <ul>
+                            <li><strong>Viewport Control</strong>: Define the visible area of the scene</li>
+                            <li><strong>Zoom Operations</strong>: Zoom in and out of specific areas</li>
+                            <li><strong>Pan Movements</strong>: Move the camera to follow objects</li>
+                            <li><strong>Frame Management</strong>: Control the aspect ratio and resolution</li>
+                        </ul>
+                        
+                        <div class="code-example">
+                            <h5>Camera Operations:</h5>
+                            <pre><code># Zoom to a specific mobject
+self.play(self.camera.frame.animate.scale(0.5))
+
+# Pan to follow an object
+self.play(self.camera.frame.animate.move_to(target_object))
+
+# Restore original view
+self.play(self.camera.frame.animate.scale(2).move_to(ORIGIN))</code></pre>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="module" id="manim.config">
+                    <h3>manim.config</h3>
+                    <p><strong>File:</strong> manim/config.py</p>
+                    <h4>Configuration Management</h4>
+                    <p>The config module handles all configuration settings for Manim, including output quality, file paths, rendering options, and various behavioral parameters.</p>
+                    
+                    <h4>Symbols</h4>
+                    
+                    <div class="symbol">
+                        <div class="symbol-header">Constant: QUALITIES</div>
+                        <h4>QUALITIES</h4>
+                        <p>A dictionary defining the available rendering quality presets for Manim animations.</p>
+                        
+                        <h5>Available Qualities:</h5>
+                        <ul>
+                            <li><strong>low_quality</strong>: Fast rendering for testing (480p)</li>
+                            <li><strong>medium_quality</strong>: Balanced quality and speed (720p)</li>
+                            <li><strong>high_quality</strong>: High resolution for final output (1080p)</li>
+                            <li><strong>production_quality</strong>: Highest quality for professional use (4K)</li>
+                        </ul>
+                        
+                        <div class="code-example">
+                            <h5>Usage in Command Line:</h5>
+                            <pre><code># Render with low quality for testing
+manim -ql my_scene.py MyScene
+
+# Render with high quality for production
+manim -qh my_scene.py MyScene</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        mermaid.initialize({startOnLoad:true});
+    </script>
+</body>
+</html> 

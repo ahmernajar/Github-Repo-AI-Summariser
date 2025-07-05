@@ -1,0 +1,129 @@
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Face-Mask-Detection - Documentation</title>
+                <style>
+                    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f5f5f5; }
+                    .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+                    .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px 0; text-align: center; margin-bottom: 30px; }
+                    .header h1 { margin: 0; font-size: 2.5em; }
+                    .header p { margin: 10px 0 0; opacity: 0.9; }
+                    .content { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 30px; }
+                    .module { border-left: 4px solid #667eea; padding-left: 20px; margin-bottom: 30px; }
+                    .symbol { background: #f8f9fa; padding: 15px; margin: 10px 0; border-radius: 5px; }
+                    .symbol-header { font-weight: bold; color: #333; margin-bottom: 10px; }
+                    .toc { background: #e9ecef; padding: 20px; border-radius: 5px; margin-bottom: 30px; }
+                    .toc ul { list-style-type: none; padding-left: 0; }
+                    .toc li { margin: 5px 0; }
+                    .toc a { text-decoration: none; color: #667eea; }
+                    .toc a:hover { text-decoration: underline; }
+                    pre { background: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; }
+                    code { background: #f8f9fa; padding: 2px 4px; border-radius: 3px; font-family: 'Monaco', 'Menlo', monospace; }
+                    .mermaid { text-align: center; margin: 20px 0; }
+                    .metadata { color: #666; font-size: 0.9em; margin-top: 20px; }
+                </style>
+                <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+            </head>
+            <body>
+                <div class="header">
+                    <h1>Face-Mask-Detection</h1>
+                    <p>Generated Documentation</p>
+                    <p class="metadata">Generated on 2025-07-05 | 0 modules | 0 files</p>
+                </div>
+                
+                <div class="container">
+                    <div class="content">
+                        <div class="toc">
+                            <h2>Table of Contents</h2>
+                            <ul>
+                                <li><a href="#overview">Overview</a></li>
+                                <li><a href="#architecture">Architecture</a></li>
+                                <li><a href="#modules">Modules</a>
+                                    <ul>
+                                        
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div id="overview">
+                            <h2>Overview</h2>
+                            <h1>Face-Mask-Detection Python Repository Overview</h1>
+<h2>1. Introduction</h2>
+<p>The Face-Mask-Detection repository is a Python-based project that leverages machine learning and computer vision techniques to detect whether a person is wearing a face mask or not. It's a powerful tool in the current global context where face masks have become a crucial part of our daily lives due to the COVID-19 pandemic.</p>
+<h2>2. Main Purpose and Use Cases</h2>
+<p>The primary purpose of this repository is to provide a solution that can be integrated into various systems to ensure compliance with face mask regulations. It can be used in a wide range of scenarios such as:</p>
+<ul>
+<li>Public transportation systems to ensure passengers are wearing masks</li>
+<li>Retail stores to monitor compliance with mask mandates</li>
+<li>Educational institutions to enforce mask-wearing rules</li>
+<li>Office buildings to maintain a safe working environment</li>
+</ul>
+<h2>3. Key Components</h2>
+<p>The Face-Mask-Detection repository is built around two main components:</p>
+<ul>
+<li><strong>Face Detection</strong>: This component uses pre-trained models from OpenCV, a popular computer vision library, to detect faces in an image or a video stream.</li>
+<li><strong>Mask Detection</strong>: Once the faces are detected, this component uses a custom-trained machine learning model to classify whether each face is wearing a mask or not.</li>
+</ul>
+<h2>4. Getting Started Guide</h2>
+<p>To get started with the Face-Mask-Detection repository, follow these steps:</p>
+<ol>
+<li>
+<p><strong>Clone the repository</strong>: Use the following command to clone the repository to your local machine:
+    <code>git clone https://github.com/username/Face-Mask-Detection.git</code>
+    Replace 'username' with the actual username of the repository owner.</p>
+</li>
+<li>
+<p><strong>Navigate to the project directory</strong>: Use the command line to navigate into the directory of the cloned repository.</p>
+</li>
+<li>
+<p><strong>Install the required libraries</strong>: The repository requires several Python libraries. These can be installed using pip, the Python package installer. More details are provided in the Installation Instructions section.</p>
+</li>
+<li>
+<p><strong>Run the application</strong>: Once the libraries are installed, you can run the application using Python. Detailed instructions on how to run the application are provided in the repository's README file.</p>
+</li>
+</ol>
+<h2>5. Installation Instructions</h2>
+<p>Before running the application, you need to install several Python libraries. These can be installed using pip. If you don't have pip installed, you can install it using the following command:</p>
+<div class="codehilite"><pre><span></span><code>python get-pip.py
+</code></pre></div>
+
+<p>Once pip is installed, you can install the required libraries using the following command:</p>
+<div class="codehilite"><pre><span></span><code>pip install -r requirements.txt
+</code></pre></div>
+
+<p>This command tells pip to install the libraries listed in the requirements.txt file, which is included in the repository.</p>
+<p>Please note that the Face-Mask-Detection repository requires Python 3. If you have multiple versions of Python installed on your machine, you may need to use 'pip3' instead of 'pip' in the above commands.</p>
+<p>After installing the required libraries, you are ready to run the application. Detailed instructions on how to run the application are provided in the repository's README file.</p>
+                        </div>
+                        
+                        <div id="architecture">
+                            <h2>Architecture</h2>
+                            <div class="mermaid">
+                                ```mermaid
+graph TD
+    A[Face-Mask-Detection] --> B[Core Modules]
+    A --> C[Python Files]
+    B --> D[Classes & Functions]
+    C --> E[0 Modules]
+    D --> F[0 Symbols]
+```
+                            </div>
+                        </div>
+                        
+                        <div id="modules">
+                            <h2>Modules</h2>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <script>
+                    mermaid.initialize({startOnLoad:true});
+                </script>
+            </body>
+            </html>
+            
