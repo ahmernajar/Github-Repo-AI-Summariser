@@ -64,7 +64,7 @@ ConductDoc automatically generates comprehensive, user-friendly documentation fo
 
 ## 🎯 Usage
 
-1. **Enter a Repository URL**: Input a GitHub repository URL (e.g., `https://github.com/ManimCommunity/manim`)
+1. **Enter a Repository URL**: Input a GitHub repository URL (e.g., `https://github.com/ahmernajar/digit-recogniser-cnn`)
 2. **Generate Documentation**: Click "Generate Documentation" and wait for processing
 3. **View Results**: Browse the generated documentation with navigation and search
 
