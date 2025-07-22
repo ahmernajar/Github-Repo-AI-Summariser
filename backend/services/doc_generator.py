@@ -13,7 +13,7 @@ class DocGenerator:
     """Service for generating documentation using GPT-4"""
     
     def __init__(self):
-        self.client = OpenAI(api_key="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")
+        self.client = OpenAI(api_key="sk-proj-uaJQV2o....")
         self.output_dir = "sample_output"
         os.makedirs(self.output_dir, exist_ok=True)
     
