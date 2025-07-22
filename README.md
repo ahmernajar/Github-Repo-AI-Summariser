@@ -1,5 +1,3 @@
-# 📚 ConductDoc
-
 **AI-Powered Python Documentation Generator**
 
 ConductDoc automatically generates comprehensive, user-friendly documentation for Python GitHub repositories using GPT-4. Simply provide a repository URL and get beautiful, navigable documentation in minutes.
@@ -9,7 +7,7 @@ ConductDoc automatically generates comprehensive, user-friendly documentation fo
 
 - **🤖 AI-Powered Documentation**: Uses GPT-4 to generate comprehensive explanations
 - **📊 Architecture Diagrams**: Automatic Mermaid diagrams showing code structure
-- **💾 Smart Caching**: Reduces API costs with intelligent caching system
+- **💾 Smart Caching**: Reduces API costs with an intelligent caching system
 - **🎨 Beautiful UI**: Modern, responsive interface with mobile support
 - **⚡ Fast Processing**: Shallow cloning and efficient parsing
 - **🔍 Symbol-Level Docs**: Detailed documentation for classes, functions, and constants
