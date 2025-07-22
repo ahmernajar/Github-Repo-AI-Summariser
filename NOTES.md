@@ -1,4 +1,4 @@
-# ConductDoc - Design Notes and Implementation Guide
+# Design Notes and Implementation Guide
 
 ## 📋 Overview
 
