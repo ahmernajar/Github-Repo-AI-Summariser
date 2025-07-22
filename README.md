@@ -4,7 +4,6 @@
 
 ConductDoc automatically generates comprehensive, user-friendly documentation for Python GitHub repositories using GPT-4. Simply provide a repository URL and get beautiful, navigable documentation in minutes.
 
-![ConductDoc Demo](https://via.placeholder.com/800x400/667eea/white?text=ConductDoc+Demo)
 
 ## 🌟 Features
 
@@ -64,15 +63,13 @@ ConductDoc automatically generates comprehensive, user-friendly documentation fo
 
 ## 🎯 Usage
 
-1. **Enter a Repository URL**: Input a GitHub repository URL (e.g., `https://github.com/ManimCommunity/manim`)
+1. **Enter a Repository URL**: Input a GitHub repository URL (e.g., `https://github.com/ahmernajar/digit-recogniser-cnn`)
 2. **Generate Documentation**: Click "Generate Documentation" and wait for processing
 3. **View Results**: Browse the generated documentation with navigation and search
 
 ### Example URLs to Try
 
-- `https://github.com/ManimCommunity/manim` - Mathematical animation library
-- `https://github.com/psf/requests` - HTTP library for Python
-- `https://github.com/pallets/flask` - Lightweight web framework
+- `https://github.com/ahmernajar/digit-recogniser-cnn`
 
 ## 📁 Project Structure
 
@@ -253,19 +250,4 @@ See [NOTES.md](NOTES.md) for detailed information about limitations and solution
 - Enterprise features and team management
 - Analytics dashboard and usage metrics
 
-## 📞 Support
-
-- **Issues**: Report bugs and request features on GitHub Issues
-- **Discussions**: Join community discussions on GitHub Discussions
-- **Documentation**: Comprehensive docs in [NOTES.md](NOTES.md)
-
-## 🙏 Acknowledgments
-
-- **OpenAI**: For providing the GPT-4 API
-- **Manim Community**: For the excellent sample repository
-- **FastAPI**: For the modern Python web framework
-- **React**: For the frontend framework
-
 ---
-
-**Made with ❤️ for the Python community** 

@@ -31,7 +31,7 @@
                 <div class="header">
                     <h1>digit-recogniser-cnn</h1>
                     <p>Generated Documentation</p>
-                    <p class="metadata">Generated on 2025-07-05 | 1 modules | 1 files</p>
+                    <p class="metadata">Generated on 2025-07-14 | 1 modules | 1 files</p>
                 </div>
                 
                 <div class="container">
@@ -54,43 +54,38 @@
                         <div id="overview">
                             <h2>Overview</h2>
                             <h1>Digit Recogniser CNN</h1>
-<h2>1. Introduction</h2>
-<p>The 'digit-recogniser-cnn' is a Python repository that leverages the power of Convolutional Neural Networks (CNN) to recognize handwritten digits. The repository contains a single module, <code>train</code>, which is used to train the CNN model on a dataset of handwritten digits.</p>
+<h2>1. Summary</h2>
+<p>The 'digit-recogniser-cnn' is a Python repository that uses Convolutional Neural Networks (CNN) to identify and recognize handwritten digits. It is a machine learning project that trains a model to classify and recognize digits from 0 to 9. The repository contains a module named 'train' which is used to train the model on a dataset of handwritten digits.</p>
 <h2>2. Main Purpose and Use Cases</h2>
-<p>The main purpose of this repository is to provide a working example of a CNN used for digit recognition. This can be particularly useful for developers looking to understand how to implement and train a CNN using Python.</p>
-<p>The use cases for this repository are wide-ranging. It can be used as a starting point for developing more complex image recognition systems, or as a tool for learning about CNNs and their applications in machine learning.</p>
+<p>The primary purpose of this repository is to provide a practical implementation of Convolutional Neural Networks for digit recognition. It can be used as a learning resource for those interested in understanding how CNNs can be applied in image classification tasks.</p>
+<p>Use cases for this repository could include:
+- Educational purposes: Understanding how CNNs work and how they can be implemented in Python.
+- As a base model for more complex digit or image recognition tasks.
+- Integration into applications that require digit recognition functionality.</p>
 <h2>3. Key Components</h2>
-<p>The key component of this repository is the <code>train</code> module. This module contains the code necessary to train the CNN on a dataset of handwritten digits. The trained model can then be used to recognize handwritten digits with a high degree of accuracy.</p>
+<p>The repository consists of one key component:</p>
+<ul>
+<li><strong>Train Module</strong>: This is the main module of the repository. It contains the code for training the CNN model on a dataset of handwritten digits. The module uses the Keras library to define and train the model. Once trained, the model can recognize and classify handwritten digits with a high degree of accuracy.</li>
+</ul>
 <h2>4. Getting Started Guide</h2>
 <p>To get started with the 'digit-recogniser-cnn' repository, follow these steps:</p>
 <ol>
-<li>Clone the repository to your local machine using the following command:</li>
+<li>Clone the repository to your local machine using the command: <code>git clone https://github.com/username/digit-recogniser-cnn.git</code></li>
+<li>Navigate to the cloned repository using: <code>cd digit-recogniser-cnn</code></li>
+<li>Run the 'train' module to train the model. This can take some time as the model is being trained on a large dataset of images.</li>
 </ol>
-<div class="codehilite"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/&lt;username&gt;/digit-recogniser-cnn.git
-</code></pre></div>
-
-<ol>
-<li>Navigate to the cloned repository:</li>
-</ol>
-<div class="codehilite"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>digit-recogniser-cnn
-</code></pre></div>
-
-<ol>
-<li>Run the <code>train</code> module to train the CNN:</li>
-</ol>
-<div class="codehilite"><pre><span></span><code>python<span class="w"> </span>train.py
-</code></pre></div>
-
 <h2>5. Installation Instructions</h2>
-<p>The 'digit-recogniser-cnn' repository does not require any specific installation steps. However, it does require Python to be installed on your machine. If you do not have Python installed, you can download it from the official Python website.</p>
-<p>Additionally, the repository may require certain Python libraries to function correctly. These libraries can be installed using pip, the Python package installer. To install the required libraries, navigate to the repository directory and run the following command:</p>
-<div class="codehilite"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+<p>Before you can run the 'train' module, you need to ensure that you have the necessary Python libraries installed on your machine. The main libraries used in this project are:</p>
+<ul>
+<li>Keras: This is a high-level neural networks API, written in Python and capable of running on top of TensorFlow, CNTK, or Theano.</li>
+<li>NumPy: This is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.</li>
+</ul>
+<p>To install these libraries, you can use the pip package manager. Run the following commands in your terminal:</p>
+<div class="codehilite"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>keras
+pip<span class="w"> </span>install<span class="w"> </span>numpy
 </code></pre></div>
 
-<p>This will install all the necessary libraries for the 'digit-recogniser-cnn' repository.</p>
-<p>Please note that it is recommended to use a virtual environment when installing Python libraries to avoid conflicts with other projects.</p>
-<h2>Conclusion</h2>
-<p>The 'digit-recogniser-cnn' repository is a powerful tool for understanding and implementing CNNs. Whether you are a seasoned developer or a beginner looking to learn more about machine learning, this repository can be a valuable resource.</p>
+<p>Once these libraries are installed, you can run the 'train' module to start training the model.</p>
                         </div>
                         
                         <div id="architecture">
@@ -114,34 +109,22 @@
                                 <p><strong>File:</strong> train.py</p>
                                 <h1>Python Module: train</h1>
 <p>Author: ahmernajar</p>
-<p>The <code>train</code> module is a Python script that contains the symbol <code>X</code>. This module is used to facilitate machine learning training processes. </p>
-<h2>Symbol: X</h2>
-<p>The symbol <code>X</code> in the <code>train</code> module is typically used to represent the input data for a machine learning model. It is a constant that can be used throughout the module to refer to the same data set.</p>
-<h3>Explanation</h3>
-<p><code>X</code> is a common notation in machine learning and statistics to denote the input variables or predictors. It is often used in the context of supervised learning where <code>X</code> represents the features used to predict a target variable <code>y</code>.</p>
-<p>In the <code>train</code> module, <code>X</code> could be a NumPy array, a pandas DataFrame, or any other data structure that is used to store the input data. The exact nature of <code>X</code> would depend on the specifics of the machine learning problem and the data at hand.</p>
-<h3>Parameters and Return Values</h3>
-<p>As <code>X</code> is a constant, it does not take any parameters or return any values. It is a placeholder for the input data.</p>
-<h3>Usage Example</h3>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">train</span> <span class="kn">import</span> <span class="n">X</span>
-
-<span class="c1"># Load data into X</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;input_data.csv&#39;</span><span class="p">)</span>
-
-<span class="c1"># Use X in a machine learning model</span>
-<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
-
-<span class="n">model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
-<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<p>This documentation provides a detailed overview of the Python module 'train' located at 'train.py'. The module contains a single constant symbol, <code>X</code>.</p>
+<h2>Constant: X</h2>
+<h3>Description</h3>
+<p><code>X</code> is a constant used within the 'train' module. The usage and purpose of this constant can vary greatly depending on the context of the module. It could be a constant value used in mathematical computations, a placeholder for data, or a configuration setting, among other possibilities.</p>
+<h3>Usage</h3>
+<p>The constant <code>X</code> is typically used directly in the code without the need for any function calls or method invocations. Here's a simple usage example:</p>
+<div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">train</span><span class="o">.</span><span class="n">X</span><span class="p">)</span>
 </code></pre></div>
 
+<p>In this example, we're simply printing the value of <code>X</code> to the console. The actual output would depend on the value assigned to <code>X</code> in the 'train' module.</p>
 <h3>Important Notes</h3>
 <ul>
-<li><code>X</code> should be carefully prepared and preprocessed before being used in a machine learning model. This could involve cleaning the data, handling missing values, encoding categorical variables, scaling numerical variables, etc.</li>
-<li>The shape of <code>X</code> (i.e., the number of rows and columns) should match the expectations of the machine learning algorithm. For example, if <code>X</code> is a two-dimensional array, the algorithm should be able to handle multi-dimensional input.</li>
-<li>It's a good practice to split <code>X</code> into a training set and a test set. The training set is used to train the model, and the test set is used to evaluate its performance. This helps to ensure that the model is able to generalize well to new data.</li>
+<li>Since <code>X</code> is a constant, its value should not be changed during the execution of the program. Python doesn't natively support constants, so it's up to the developer to ensure that the value of <code>X</code> remains unchanged.</li>
+<li>The purpose and usage of <code>X</code> can vary greatly depending on the context of the 'train' module. Always refer to the module's documentation or comments for specific details.</li>
 </ul>
+<p>Please note that without the actual 'train.py' module, it's impossible to provide more specific details about the constant <code>X</code>. This documentation is based on general Python programming practices and conventions. For more detailed and accurate information, please refer to the documentation or comments provided in the 'train.py' module.</p>
                                 
                                 
                                 <h4>Symbols</h4>
@@ -149,27 +132,26 @@
                                 <div class="symbol">
                                     <div class="symbol-header">Constant: X</div>
                                     <h2>Python Constant: <code>X</code></h2>
-<h3>1. What this constant represents</h3>
-<p>In Python, the constant <code>X</code> represents a multi-dimensional array or matrix of values extracted from a dataset. This is achieved by using the <code>iloc</code> function from the pandas library, which is used for integer-location based indexing / selection by position.</p>
-<p>The expression <code>dataset.iloc[:, 1:].values</code> means that <code>X</code> will contain all the rows (indicated by <code>:</code>) and all the columns starting from the second one (indicated by <code>1:</code>) of the dataset. The <code>.values</code> at the end converts the data into a numpy array.</p>
-<h3>2. Its purpose and usage</h3>
-<p>The purpose of <code>X</code> is to hold the feature variables from a dataset, which will be used for data analysis or machine learning tasks. It is common practice to separate the dataset into features (usually assigned to <code>X</code>) and the target variable (usually assigned to <code>y</code>).</p>
-<p>The usage of <code>X</code> depends on the specific task at hand. For instance, in machine learning, <code>X</code> could be used as input data for training a model.</p>
-<h3>3. Simple usage example</h3>
-<p>Here is a simple usage example:</p>
+<h3>What this constant represents</h3>
+<p>The constant <code>X</code> represents a multi-dimensional array or matrix of values extracted from a dataset. Specifically, it includes all rows and all columns except the first one from the dataset.</p>
+<h3>Its purpose and usage</h3>
+<p>The purpose of <code>X</code> is to hold the feature variables from a dataset, which are used for data analysis or machine learning models. In the context of machine learning, <code>X</code> usually represents the input data for a model, excluding the target variable.</p>
+<p>The usage of <code>X</code> is common in data preprocessing, where it is used to separate the independent variables from the dependent variable in a dataset. The independent variables are then used for training, testing, or predicting in machine learning models.</p>
+<h3>Simple usage example</h3>
 <div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-<span class="c1"># Assume we have a dataset in a CSV file</span>
-<span class="n">dataset</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data.csv&#39;</span><span class="p">)</span>
+<span class="c1"># Load a dataset</span>
+<span class="n">dataset</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;your_dataset.csv&#39;</span><span class="p">)</span>
 
-<span class="c1"># We assign the feature variables to X</span>
+<span class="c1"># Create the &#39;X&#39; constant</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">values</span>
 
-<span class="c1"># Now X can be used as input data for further analysis or model training</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="c1"># Now &#39;X&#39; can be used as input for a machine learning model</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
 </code></pre></div>
 
-<p>In this example, <code>X</code> will contain all the data from the CSV file excluding the first column. The data is printed out at the end.</p>
+<p>In this example, <code>X</code> is created by selecting all rows and all columns except the first one from the dataset. Then, it is used to create training and testing sets for a machine learning model.</p>
                                 </div>
                                 
                                 

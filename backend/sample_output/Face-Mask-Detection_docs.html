@@ -31,7 +31,7 @@
                 <div class="header">
                     <h1>Face-Mask-Detection</h1>
                     <p>Generated Documentation</p>
-                    <p class="metadata">Generated on 2025-07-05 | 0 modules | 0 files</p>
+                    <p class="metadata">Generated on 2025-07-14 | 0 modules | 0 files</p>
                 </div>
                 
                 <div class="container">
@@ -51,66 +51,67 @@
                         
                         <div id="overview">
                             <h2>Overview</h2>
-                            <h1>Face-Mask-Detection Python Repository Overview</h1>
-<h2>1. Introduction</h2>
-<p>The Face-Mask-Detection repository is a Python-based project that leverages machine learning and computer vision techniques to detect whether a person is wearing a face mask or not. It's a powerful tool in the current global context where face masks have become a crucial part of our daily lives due to the COVID-19 pandemic.</p>
+                            <h1>Face-Mask-Detection</h1>
+<h2>1. Overview</h2>
+<p>The 'Face-Mask-Detection' repository is a Python-based project that utilizes machine learning and computer vision techniques to detect whether a person is wearing a face mask or not. This repository is particularly relevant in the current global scenario where wearing face masks has become an essential part of our daily lives due to the COVID-19 pandemic.</p>
 <h2>2. Main Purpose and Use Cases</h2>
-<p>The primary purpose of this repository is to provide a solution that can be integrated into various systems to ensure compliance with face mask regulations. It can be used in a wide range of scenarios such as:</p>
+<p>The primary purpose of this repository is to provide a solution for detecting the presence of face masks on individuals in real-time. It can be used in various scenarios such as:</p>
 <ul>
-<li>Public transportation systems to ensure passengers are wearing masks</li>
-<li>Retail stores to monitor compliance with mask mandates</li>
-<li>Educational institutions to enforce mask-wearing rules</li>
-<li>Office buildings to maintain a safe working environment</li>
+<li>In public places like shopping malls, airports, and railway stations to ensure that everyone is wearing a mask for public safety.</li>
+<li>In workplaces to ensure employees are adhering to safety protocols.</li>
+<li>In educational institutions to monitor if students are wearing masks.</li>
 </ul>
 <h2>3. Key Components</h2>
-<p>The Face-Mask-Detection repository is built around two main components:</p>
+<p>As the repository structure is not provided, we can't specify the key components. However, a typical face mask detection project would involve the following components:</p>
 <ul>
-<li><strong>Face Detection</strong>: This component uses pre-trained models from OpenCV, a popular computer vision library, to detect faces in an image or a video stream.</li>
-<li><strong>Mask Detection</strong>: Once the faces are detected, this component uses a custom-trained machine learning model to classify whether each face is wearing a mask or not.</li>
+<li><strong>Dataset:</strong> A collection of images used to train the machine learning model. The dataset usually contains images of people wearing masks and not wearing masks.</li>
+<li><strong>Model Training:</strong> Scripts to train the machine learning model using the dataset. This involves preprocessing the data, defining the model architecture, training the model, and saving the trained model for later use.</li>
+<li><strong>Model Inference:</strong> Scripts to use the trained model to detect face masks in new images or video streams. This involves loading the trained model, preprocessing the input images or video frames, and making predictions using the model.</li>
+<li><strong>Utilities:</strong> Helper functions used in various stages of the project, such as functions for image preprocessing, model loading, etc.</li>
 </ul>
-<h2>4. Getting Started Guide</h2>
-<p>To get started with the Face-Mask-Detection repository, follow these steps:</p>
+<h2>4. Getting Started</h2>
+<p>To get started with the 'Face-Mask-Detection' repository, follow these steps:</p>
 <ol>
-<li>
-<p><strong>Clone the repository</strong>: Use the following command to clone the repository to your local machine:
-    <code>git clone https://github.com/username/Face-Mask-Detection.git</code>
-    Replace 'username' with the actual username of the repository owner.</p>
-</li>
-<li>
-<p><strong>Navigate to the project directory</strong>: Use the command line to navigate into the directory of the cloned repository.</p>
-</li>
-<li>
-<p><strong>Install the required libraries</strong>: The repository requires several Python libraries. These can be installed using pip, the Python package installer. More details are provided in the Installation Instructions section.</p>
-</li>
-<li>
-<p><strong>Run the application</strong>: Once the libraries are installed, you can run the application using Python. Detailed instructions on how to run the application are provided in the repository's README file.</p>
-</li>
+<li>Clone the repository to your local machine using the following command:</li>
 </ol>
-<h2>5. Installation Instructions</h2>
-<p>Before running the application, you need to install several Python libraries. These can be installed using pip. If you don't have pip installed, you can install it using the following command:</p>
-<div class="codehilite"><pre><span></span><code>python get-pip.py
+<div class="codehilite"><pre><span></span><code>git clone https://github.com/&lt;username&gt;/Face-Mask-Detection.git
 </code></pre></div>
 
-<p>Once pip is installed, you can install the required libraries using the following command:</p>
+<ol>
+<li>Navigate to the cloned repository:</li>
+</ol>
+<div class="codehilite"><pre><span></span><code>cd Face-Mask-Detection
+</code></pre></div>
+
+<ol>
+<li>Install the required Python packages. The list of required packages is usually provided in a requirements.txt file.</li>
+</ol>
 <div class="codehilite"><pre><span></span><code>pip install -r requirements.txt
 </code></pre></div>
 
-<p>This command tells pip to install the libraries listed in the requirements.txt file, which is included in the repository.</p>
-<p>Please note that the Face-Mask-Detection repository requires Python 3. If you have multiple versions of Python installed on your machine, you may need to use 'pip3' instead of 'pip' in the above commands.</p>
-<p>After installing the required libraries, you are ready to run the application. Detailed instructions on how to run the application are provided in the repository's README file.</p>
+<ol>
+<li>Run the main script to start the face mask detection:</li>
+</ol>
+<div class="codehilite"><pre><span></span><code>python main.py
+</code></pre></div>
+
+<h2>5. Installation Instructions</h2>
+<p>The 'Face-Mask-Detection' repository does not require any specific installation. However, you need to have Python installed on your machine, and you may need to install some Python packages. The required packages can be installed using pip, the Python package installer. The list of required packages is usually provided in a requirements.txt file in the repository. You can install the packages using the following command:</p>
+<div class="codehilite"><pre><span></span><code>pip install -r requirements.txt
+</code></pre></div>
+
+<p>Please note that the exact commands and steps may vary depending on the specific structure and contents of the 'Face-Mask-Detection' repository.</p>
                         </div>
                         
                         <div id="architecture">
                             <h2>Architecture</h2>
                             <div class="mermaid">
-                                ```mermaid
-graph TD
+                                graph TD
     A[Face-Mask-Detection] --> B[Core Modules]
     A --> C[Python Files]
     B --> D[Classes & Functions]
     C --> E[0 Modules]
     D --> F[0 Symbols]
-```
                             </div>
                         </div>
                         
