@@ -2,7 +2,7 @@
 
 ## 📋 Overview
 
-ConductDoc is an AI-powered documentation generator that automatically creates comprehensive, user-friendly documentation for Python GitHub repositories. It combines repository analysis, intelligent parsing, and GPT-4 generation to produce high-quality documentation with minimal user intervention.
+GitHub Repo AI Summariser is an AI-powered documentation generator that automatically creates comprehensive, user-friendly documentation for Python GitHub repositories. It combines repository analysis, intelligent parsing, and GPT-4 generation to produce high-quality documentation with minimal user intervention.
 
 ## 🏗️ Architecture Overview
 
@@ -76,7 +76,7 @@ ConductDoc is an AI-powered documentation generator that automatically creates c
 - **Cleanup Utilities**: Automatic expired cache removal
 
 **Design Decisions**:
-- Chose SQLite over Redis for simplicity and no external dependencies
+- Choose SQLite over Redis for simplicity and no external dependencies
 - Implemented expiration to balance freshness with cost savings
 - Added comprehensive error handling to prevent cache failures from breaking the main flow
 - Used JSON serialization for complex data structures
@@ -116,7 +116,7 @@ src/
 - **Error Handling**: Clear error messages and recovery options
 
 **Design Decisions**:
-- Kept simple with single component to meet 4-6 hour timeline
+- Kept simple with a single component to meet a 4-6 hour timeline
 - Used modern CSS with gradients and animations for visual appeal
 - Implemented accessibility features (proper labels, keyboard navigation)
 - Added proxy configuration for seamless API communication
@@ -158,7 +158,7 @@ src/
 3. **Prompt Generation**: Create targeted prompts for different documentation levels
 4. **AI Generation**: Call GPT-4 with optimized prompts
 5. **Post-Processing**: Convert markdown to HTML and apply styling
-6. **Assembly**: Combine all components into final documentation
+6. **Assembly**: Combine all components into the final documentation
 
 ## 💾 Caching Strategy
 
@@ -236,7 +236,7 @@ npm start
 # Backend Dockerfile
 FROM python:3.9-slim
 WORKDIR /app
-COPY requirements.txt .
+COPY requirements.txt.
 RUN pip install -r requirements.txt
 COPY . .
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
@@ -372,7 +372,7 @@ CMD ["npx", "serve", "-s", "build"]
 
 ## 🎯 Conclusion
 
-ConductDoc represents a significant step forward in automated documentation generation. By combining modern web technologies with AI capabilities, it provides a powerful tool for Python developers to create comprehensive, user-friendly documentation with minimal effort.
+GitHub Repo AI Summariser represents a significant step forward in automated documentation generation. By combining modern web technologies with AI capabilities, it provides a powerful tool for Python developers to create comprehensive, user-friendly documentation with minimal effort.
 
 The system's modular architecture allows for easy extension and customization, while the caching system ensures cost-effective operation. The responsive frontend provides an excellent user experience across all devices.
 
