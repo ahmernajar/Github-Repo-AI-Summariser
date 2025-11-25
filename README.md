@@ -1,6 +1,6 @@
 **AI-Powered Python Documentation Generator**
 
-ConductDoc automatically generates comprehensive, user-friendly documentation for Python GitHub repositories using GPT-4. Simply provide a repository URL and get beautiful, navigable documentation in minutes.
+Github-Repo-AI-Summariser automatically generates comprehensive, user-friendly documentation for Python GitHub repositories using GPT-4. Simply provide a repository URL and get beautiful, navigable documentation in minutes.
 
 
 ## 🌟 Features
